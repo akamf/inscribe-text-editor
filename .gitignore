@@ -1,0 +1,47 @@
+# Build files and directories
+build/
+cmake-build-debug/
+cmake-build-release/
+bin/
+obj/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# Project files
+Makefile
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+CTestTestfile.cmake
+cmake_install.cmake
+compile_commands.json
+
+# IDE/project files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Log/Temporary files
+*.log
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.user
+*.session
+*.ncb
+*.sdf
+*.opensdf
+*.cache
+*.pyc
