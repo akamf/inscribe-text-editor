@@ -12,6 +12,12 @@ obj/
 *.dylib
 *.out
 
+# vcpkg build and packages directories
+vcpkg_installed/
+vcpkg_buildtrees/
+vcpkg/downloads/
+vcpkg/packages/
+
 # Project files
 Makefile
 CMakeCache.txt
