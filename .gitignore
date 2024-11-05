@@ -23,7 +23,7 @@ Makefile
 CMakeCache.txt
 CMakeFiles/
 CMakeScripts/
-Testing/
+Test/
 CTestTestfile.cmake
 cmake_install.cmake
 compile_commands.json
