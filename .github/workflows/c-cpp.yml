@@ -1,4 +1,4 @@
-name: C++ CI - Inscribe
+name: Inscribe Text Editor CI
 
 on:
   push:
@@ -18,11 +18,9 @@ jobs:
       run: |
         git clone https://github.com/microsoft/vcpkg.git
         ./vcpkg/bootstrap-vcpkg.sh
-      # Cache for faster result
-      id: vcpkg
 
     - name: Install dependencies with vcpkg
-      run: ./vcpkg/vcpkg install fltk
+      run: ./vcpkg/vcpkg install
 
     - name: Configure with CMake
       run: cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=./vcpkg/scripts/buildsystems/vcpkg.cmake
