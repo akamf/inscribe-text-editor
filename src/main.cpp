@@ -7,19 +7,9 @@
 // char filename[256] = "";
 
 int main() {
-    FileManager FileManager;
-    const std::string filename {"Test/test.txt"}; // Local testing
+    FileManager fileManager;
     
-    if (FileManager.readFile(filename)) {
-        Logger::instance().log("Inside " + filename + ":\n");
-        for (const auto&line : FileManager.getBuffer()) {
-            Logger::instance().log(line + "\n");
-        }
-    } else {
-        Logger::instance().error("Could not read " + filename + ".\n");
-    }
-
     std::cin.get();
-    
+
     return 0;
 };
