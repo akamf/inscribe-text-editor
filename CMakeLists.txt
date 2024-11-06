@@ -18,6 +18,3 @@ file(GLOB SOURCES
 )
 
 add_executable(inscribe-text-editor ${SOURCES})
-
-# Länka FLTK-biblioteket
-target_link_libraries(inscribe-text-editor PRIVATE fltk)
