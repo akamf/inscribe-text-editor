@@ -11,11 +11,10 @@ if(DEFINED ENV{VCPKG_ROOT})
 endif()
 
 # Project .cpp-files
-set(SOURCES
-    src/main.cpp
-    src/FileManager/FileManager.cpp
-    # src/Window.cpp
-    # Add more as needed
+file(GLOB SOURCES
+    src/*.cpp
+    src/FileManager/*.cpp
+    src/Utils/Logging/*.cpp
 )
 
 add_executable(inscribe-text-editor ${SOURCES})

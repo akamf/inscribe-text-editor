@@ -1,4 +1,6 @@
 {
+  "name": "inscribe-text-editor",
+  "version": "1.0.0",
   "dependencies": [
     "fmt",
     "fltk"
