@@ -2,8 +2,14 @@
 #include <fstream>
 #include <iostream>
 #include <cstdio>
+#include <algorithm>
+
 
 FileManager::FileManager() : buffer{} {}
+
+const std::vector<std::string>& FileManager::getBuffer() const {
+    return buffer;
+};
 
 bool FileManager::readFile(const std::string& filename) {
     std:: ifstream file {filename};
