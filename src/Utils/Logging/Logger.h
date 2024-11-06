@@ -12,7 +12,7 @@ public:
     virtual void error(const std::string& logMessage) const = 0;
     virtual void warning(const std::string& logMessage) const = 0;
 
-    static constexpr Logger& instance();
+    static Logger& instance();
 
 protected:
     Logger() = default;
