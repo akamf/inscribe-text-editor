@@ -3,9 +3,6 @@
 
 
 int main() {
-    FileManager fileManager;
-    
-    std::cin.get();
 
     return 0;
 };
