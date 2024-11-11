@@ -2,6 +2,16 @@
   "name": "inscribe-text-editor",
   "version": "1.0.0",
   "dependencies": [
-    "fmt"
+    {
+      "name": "fmt",
+      "default-features": true
+    },
+    {
+      "name": "imgui",
+      "features": [
+        "glfw-binding",
+        "opengl3-binding"
+      ]
+    }
   ]
 }
